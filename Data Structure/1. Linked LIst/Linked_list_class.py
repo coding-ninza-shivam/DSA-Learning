@@ -4,6 +4,7 @@ class Node:
         self.next = None
 
 class LinkedList:
+
     @staticmethod
     def print_ll(head):
         temp = head
@@ -13,7 +14,21 @@ class LinkedList:
         print()
 
     @staticmethod
-    def take_input_better():
+    def create_ll_from_list(l1):
+        head=None
+        tail=None
+        for value in l1:
+            new_node=Node(value)
+            if head==Node:
+                head=new_node
+                tail=new_node
+            else:
+                tail.next=new_node
+                tail=new_node
+        return head
+
+    @staticmethod
+    def take_input():
         value = int(input("Enter the value of Node (-1 to stop): "))
         head = None
         tail = None
