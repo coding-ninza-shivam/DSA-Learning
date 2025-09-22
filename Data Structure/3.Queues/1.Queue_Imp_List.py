@@ -1,4 +1,4 @@
-class QueueUsingLista:
+class QueueUsingList:
     def __init__(self):
         self.__queue = []
 
@@ -22,7 +22,7 @@ class QueueUsingLista:
         removed = self.__queue.pop(0)
         return f'{removed} got dequeued.'
     
-q = QueueUsingLista()
+q = QueueUsingList()
 print(q.dequeue())  
 print(q.isEmpty())       
 print(q.enqueue(10))     
